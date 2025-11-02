@@ -36,17 +36,17 @@ The built files will be in the `dist` directory.
 
 ### Mobile View
 
-<img width="1108" height="1800" alt="image" src="https://github.com/user-attachments/assets/a062dbbb-192d-4998-8b83-e3401b210279" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/a062dbbb-192d-4998-8b83-e3401b210279" />
 
-<img width="1110" height="1804" alt="image" src="https://github.com/user-attachments/assets/e685852c-92f0-42ed-a03b-29a2804fd88f" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/e685852c-92f0-42ed-a03b-29a2804fd88f" />
 
-<img width="1106" height="1804" alt="image" src="https://github.com/user-attachments/assets/e2b99498-cfb2-4935-89e2-4367c2f37204" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/e2b99498-cfb2-4935-89e2-4367c2f37204" />
 
-<img width="1044" height="1802" alt="image" src="https://github.com/user-attachments/assets/b880980c-ce70-43e6-8910-5626cc458156" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/b880980c-ce70-43e6-8910-5626cc458156" />
 
-<img width="1042" height="1796" alt="image" src="https://github.com/user-attachments/assets/a18f35d6-708d-4fc4-a300-92fecd7593eb" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/a18f35d6-708d-4fc4-a300-92fecd7593eb" />
 
-<img width="1108" height="1804" alt="image" src="https://github.com/user-attachments/assets/d0751f9c-fb31-479c-8b97-1874c741c1e9" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/d0751f9c-fb31-479c-8b97-1874c741c1e9" />
 
 
 ## Demo Video
