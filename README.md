@@ -44,7 +44,8 @@ The built files will be in the `dist` directory.
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/602dacdd-029f-4d2b-8fdb-61ccfb0f48a7" />
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/8fca8794-f186-4404-8f44-257a3d0d929b" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/a82ceb3e-5aa0-47ae-80b2-acb3c6a712a7" />
+
 
 
 ### Mobile View
@@ -64,4 +65,4 @@ The built files will be in the `dist` directory.
 
 ## Demo Video
 
-[TODO: Add a link to your demo video here]
+https://github.com/user-attachments/assets/06b47745-ed02-47dd-920c-54379f8672fe
