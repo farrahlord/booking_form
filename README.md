@@ -34,6 +34,19 @@ The built files will be in the `dist` directory.
 
 ### Desktop View
 
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/29903268-e6da-4bdf-bbab-1fd36779df1f" />
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/66f84dea-d231-44fb-a39b-a12baee56ca0" />
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/e017ae34-0a2e-4c1d-a206-8305cf8fb7a3" />
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/55147f4b-0a3a-4dd2-9aa7-50731239f762" />
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/602dacdd-029f-4d2b-8fdb-61ccfb0f48a7" />
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/8fca8794-f186-4404-8f44-257a3d0d929b" />
+
+
 ### Mobile View
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/a062dbbb-192d-4998-8b83-e3401b210279" />
