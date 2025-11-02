@@ -29,7 +29,7 @@ const Button: FC<PropsWithChildren<Props>> = ({
       type={type}
       className={classNames(
         BUTTON_VARIANTS[variant],
-        "text-sm p-4 rounded-xl md:min-w-36",
+        "text-sm p-4 rounded-xl",
         className,
         { "opacity-50 cursor-not-allowed": disabled },
         { "cursor-pointer": !disabled }

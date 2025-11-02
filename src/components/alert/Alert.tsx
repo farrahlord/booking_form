@@ -13,9 +13,9 @@ const Alert: FC<PropsWithChildren<Props>> = ({ title, children }) => {
           <WarningIcon />
           <h4 className="font-bold text-sm">{title}</h4>
         </div>
-        <span className="cursor-pointer hidden md:block">
+        <div className="cursor-pointer hidden md:block">
           <CloseIcon />
-        </span>
+        </div>
       </div>
       {children}
     </div>

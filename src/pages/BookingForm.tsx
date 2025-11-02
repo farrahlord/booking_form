@@ -75,7 +75,10 @@ const BookingForm = () => {
     <div className="md:max-w-lg mx-auto md:p-0 p-6">
       <FormProvider {...formMethods}>
         <ProgressBar progressPercentage={progress} className="mb-6 md:mt-10" />
-        <form className="flex flex-col md:min-w-lg w-full">
+        <form
+          className="flex flex-col md:min-w-lg w-full"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           {step === Steps.CONTACT_INFORMATION && (
             <>
               <FormTitle>
@@ -120,7 +123,11 @@ const BookingForm = () => {
               <PageFooter />
             </div>
             <span className="flex w-full md:w-auto gap-6">
-              <Button variant="secondary" onClick={onPrevious} className="grow">
+              <Button
+                variant="secondary"
+                onClick={onPrevious}
+                className="grow md:min-w-36"
+              >
                 Previous
               </Button>
 
@@ -128,7 +135,7 @@ const BookingForm = () => {
                 variant="primary"
                 disabled={!isValid || formSubmitting}
                 onClick={onContinue}
-                className="grow"
+                className="grow md:min-w-36"
               >
                 {formSubmitting ? "Submitting..." : "Continue"}
               </Button>
@@ -136,6 +143,9 @@ const BookingForm = () => {
           </div>
         </form>
       </FormProvider>
+      <div className="hidden md:block">
+        <PageFooter />
+      </div>
     </div>
   );
 };

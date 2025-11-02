@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import BookingForm from "./pages/BookingForm.tsx";
 import SubmissionPage from "./pages/SubmissionPage.tsx";
 import App from "./App.tsx";
-import PageFooter from "./components/pageFooter/PageFooter.tsx";
 
 import "./index.css";
 
@@ -19,9 +18,6 @@ createRoot(document.getElementById("root")!).render(
             <Route path="/submission" element={<SubmissionPage />} />
           </Routes>
         </main>
-        <span className="hidden md:block">
-          <PageFooter />
-        </span>
       </div>
     </BrowserRouter>
   </StrictMode>

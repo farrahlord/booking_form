@@ -22,7 +22,7 @@ const SubmissionPage = () => {
           to your registered email address.
         </p>
         <p className="text-md text-center">
-          To attend or cancel your session, go to the bookingarea by clicking
+          To attend or cancel your session, go to the booking area by clicking
           the calendar icon in the top navigation
         </p>
 
@@ -41,9 +41,17 @@ const SubmissionPage = () => {
           <div className="md:hidden block">
             <PageFooter />
           </div>
-          <Button variant="primary" disabled={false} onClick={handleReturnHome}>
+          <Button
+            variant="primary"
+            disabled={false}
+            onClick={handleReturnHome}
+            className="w-full"
+          >
             Return to Home
           </Button>
+        </div>
+        <div className="hidden md:block">
+          <PageFooter />
         </div>
       </div>
     </>
