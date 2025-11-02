@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import type { FC, MouseEventHandler, PropsWithChildren } from "react";
 
 type ButtonVariant = "primary" | "secondary";
@@ -11,26 +12,28 @@ interface Props {
   variant?: ButtonVariant;
   onClick: MouseEventHandler<HTMLButtonElement>;
   disabled?: boolean;
-  className?: string;
   type?: "button" | "submit" | "reset";
+  className?: string;
 }
 
 const Button: FC<PropsWithChildren<Props>> = ({
   variant = "primary",
   onClick,
   disabled = false,
-  children,
   type = "button",
+  className = "",
+  children,
 }) => {
   return (
     <button
       type={type}
-      style={{ minWidth: "144px" }}
-      className={`${
-        BUTTON_VARIANTS[variant]
-      } text-sm p-4 rounded-xl cursor-pointer ${
-        disabled ? "opacity-50 cursor-not-allowed" : ""
-      }`}
+      className={classNames(
+        BUTTON_VARIANTS[variant],
+        "text-sm p-4 rounded-xl md:min-w-36",
+        className,
+        { "opacity-50 cursor-not-allowed": disabled },
+        { "cursor-pointer": !disabled }
+      )}
       disabled={disabled}
       onClick={onClick}
     >

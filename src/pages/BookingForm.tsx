@@ -5,6 +5,7 @@ import InputField from "../components/forms/InputField";
 import { useState, type FC, type PropsWithChildren } from "react";
 import ButtonGroupField from "../components/forms/ButtonGroupField";
 import { useNavigate } from "react-router";
+import PageFooter from "../components/pageFooter/PageFooter";
 
 const totalSteps = 3;
 
@@ -15,9 +16,7 @@ const Steps = {
 };
 
 const FormTitle: FC<PropsWithChildren> = ({ children }) => (
-  <p className="text-xl font-bold mb-6 text-left" style={{ fontSize: "22px" }}>
-    {children}
-  </p>
+  <p className="font-bold mb-6 text-left w-full text-[22px]">{children}</p>
 );
 
 interface FormValues {
@@ -29,6 +28,7 @@ interface FormValues {
 
 const BookingForm = () => {
   const navigate = useNavigate();
+  const [formSubmitting, setFormSubmitting] = useState(false);
   const [step, setStep] = useState(Steps.CONTACT_INFORMATION);
   const formMethods = useForm<FormValues>({ mode: "onChange" });
 
@@ -39,8 +39,11 @@ const BookingForm = () => {
   } = formMethods;
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
-    console.log(data);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    setFormSubmitting(true);
+    await new Promise((resolve) => {
+      setTimeout(resolve, 1000);
+      console.log(data);
+    });
 
     navigate("/submission");
   };
@@ -69,10 +72,10 @@ const BookingForm = () => {
   const progress = (step / totalSteps) * 100;
 
   return (
-    <div className="max-w-lg mx-auto sm:p-6">
+    <div className="md:max-w-lg mx-auto md:p-0 p-6">
       <FormProvider {...formMethods}>
-        <ProgressBar progressPercentage={progress} className="mb-6" />
-        <form className="flex flex-col w-lg">
+        <ProgressBar progressPercentage={progress} className="mb-6 md:mt-10" />
+        <form className="flex flex-col md:min-w-lg w-full">
           {step === Steps.CONTACT_INFORMATION && (
             <>
               <FormTitle>
@@ -112,14 +115,24 @@ const BookingForm = () => {
             </>
           )}
 
-          <div className="flex gap-6 justify-end mt-4 mb-4">
-            <Button variant="secondary" onClick={onPrevious}>
-              Previous
-            </Button>
+          <div className="flex flex-col md:flex-row w-full p-6 md:p-0 md:justify-end mt-4 bottom-0 left-0 absolute md:relative">
+            <div className="md:hidden block">
+              <PageFooter />
+            </div>
+            <span className="flex w-full md:w-auto gap-6">
+              <Button variant="secondary" onClick={onPrevious} className="grow">
+                Previous
+              </Button>
 
-            <Button variant="primary" disabled={!isValid} onClick={onContinue}>
-              Continue
-            </Button>
+              <Button
+                variant="primary"
+                disabled={!isValid || formSubmitting}
+                onClick={onContinue}
+                className="grow"
+              >
+                {formSubmitting ? "Submitting..." : "Continue"}
+              </Button>
+            </span>
           </div>
         </form>
       </FormProvider>

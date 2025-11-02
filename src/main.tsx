@@ -11,16 +11,17 @@ import "./index.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-      <div className="h-screen flex flex-col items-center">
-        <main className="flex mt-10 justify-center">
+      <div className="flex flex-col items-center">
+        <main className="flex justify-center relative h-screen">
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/booking" element={<BookingForm />} />
             <Route path="/submission" element={<SubmissionPage />} />
           </Routes>
         </main>
-
-        <PageFooter />
+        <span className="hidden md:block">
+          <PageFooter />
+        </span>
       </div>
     </BrowserRouter>
   </StrictMode>
