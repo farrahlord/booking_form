@@ -32,6 +32,10 @@ The built files will be in the `dist` directory.
 
 ## Screenshots
 
+### Desktop View
+
+### Mobile View
+
 [TODO: Add screenshots of your application here]
 
 ## Demo Video
