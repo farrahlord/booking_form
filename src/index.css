@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-spectrum-burple: #604bff;
+  --color-spectrum-burple-dark: #4D3CCC;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 526px;
+  min-height: 100vh;
+}
