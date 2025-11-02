@@ -1,11 +1,4 @@
-// import { useState } from "react";
-import {
-  // type UseFormRegister,
-  type FieldValues,
-  type Path,
-  // type FieldErrors,
-  useFormContext,
-} from "react-hook-form";
+import { type FieldValues, type Path, useFormContext } from "react-hook-form";
 import { InputValidationByType } from "./validation";
 import FieldWrapper from "./FieldWrapper";
 import classNames from "classnames";
