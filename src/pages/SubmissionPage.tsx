@@ -8,7 +8,7 @@ const SubmissionPage = () => {
   const navigate = useNavigate();
 
   const handleReturnHome = () => {
-    navigate("/");
+    navigate("/home");
   };
 
   return (

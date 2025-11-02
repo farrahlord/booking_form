@@ -13,7 +13,8 @@ createRoot(document.getElementById("root")!).render(
       <div className="flex flex-col items-center">
         <main className="flex justify-center relative h-screen">
           <Routes>
-            <Route path="/" element={<App />} />
+            <Route path="/" element={<BookingForm />} />
+            <Route path="/home" element={<App />} />
             <Route path="/booking" element={<BookingForm />} />
             <Route path="/submission" element={<SubmissionPage />} />
           </Routes>
